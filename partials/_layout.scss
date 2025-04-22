@@ -182,9 +182,16 @@
     padding: 0 44px 34px 44px;
 
     img {
-        width: 300px;
+        width: 100%;
+        max-width: 350px;
+        transition: transform 0.2s;
     }
 
+}
+
+.joias-content  img:hover{
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .joias-itens {
@@ -196,11 +203,139 @@
     box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
 
     overflow: hidden;
-}
 
+}
 .descript-joias {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 14px;
+    background-color: $primary-normal;
+    z-index: 99;
 }
+
+.descript-joias button {
+    color: $primary-normal;
+    background-color: $secondary-ligth;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width:768px){
+    .joias-content {
+        flex-direction: column;
+    }
+
+    .joias-content img {
+        max-width: 740px;
+    }
+}
+
+// Footer
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    margin-top: 50px;
+    border-top: 4px solid $primary-light;
+
+   
+}
+
+.footer-icon{
+    display: flex;
+    gap: 8px;
+
+}
+
+.footer-icon a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color:$secondary-ligth;
+    }
+
+    @keyframes translateY {
+        from {
+            transform: translateY(0) scale(1) ;
+        }
+        to {
+            transform: translateY(-8px) scale(1.1);
+        }
+    }
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+@media screen and (max-width:768px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            font-size: 12px;
+           
+        }
+    }
+}
+
+// Botão Whatsapp
+
+.btn-whatssapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+
+    img {
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatssapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $primary-normal;
+    color: $primary-light;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatssapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .btn-whatssapp{
+        img {
+            max-width: 64px;
+        }
+    }
+}
+
+
+
+
