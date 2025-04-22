@@ -21,6 +21,6 @@ Criar uma interface moderna e atrativa para uma loja de joias, destacando os pro
 O projeto conta com uma identidade visual voltada para o público feminino, com cores claras, detalhes dourados e imagens de alta qualidade.
 
 ## 📞 Contato
-Botão de contato com link direto para atendimento, facilitando a comunicação entre cliente e loja.
+Botão de contato com link direto para atendimento, facilitando a comunicação entre cliente e loja. 
 
 ---
