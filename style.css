@@ -189,7 +189,7 @@ i {
 }
 
 .about-description h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 24px;
 }
 .about-description p {
@@ -204,6 +204,15 @@ i {
   }
   .about-content img {
     margin-right: 30px;
+  }
+  .about-description h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 45px;
+  }
+  .about-description p {
+    font-size: 15px;
+    width: 350px;
   }
 }
 .services {
